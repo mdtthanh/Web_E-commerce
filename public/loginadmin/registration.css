@@ -1,0 +1,351 @@
+.registration {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  width: 80%;
+  max-width: 1200px;
+  height: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border-radius: 100px 20px 100px 20px;
+  overflow: hidden;
+}
+.registration__area {
+  max-width: 420px;
+  margin: 0 auto;
+  height: 100%;
+  text-align: center;
+  padding: 10px 40px;
+  flex-basis: 45%;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+.registration__area.active {
+  transform: translateX(-1000px);
+}
+.registration__forgot {
+  margin-right: 20px;
+  text-align: right;
+}
+.registration__forgot span {
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
+.registration__forgot span:hover {
+  text-decoration: underline;
+}
+.registration__copyright {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  text-align: left;
+  font-size: 12px;
+  opacity: 0.7;
+}
+.registration__images {
+  flex-basis: 48%;
+  height: 80%;
+  transition: all 0.4s ease;
+}
+.registration__images img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.registration__images.active {
+  transform: translateX(1000px);
+}
+
+.heading {
+  margin-bottom: 80px;
+}
+.heading__primary {
+  font-family: "Cookie", cursive;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+.heading__secondary {
+  font-size: 15px;
+  color: #666666;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.form__input {
+  position: relative;
+  text-align: left;
+  margin-bottom: 25px;
+}
+.form__input label {
+  font-size: 15px;
+  font-weight: 500;
+}
+.form__input input {
+  width: 90%;
+  display: block;
+  margin-top: 5px;
+  font-size: 16px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+.form__input input:focus {
+  outline: 3px solid #bde3d8;
+}
+.form__input input.invalid {
+  outline: 2px solid #ca1515;
+}
+.form__input .showhide {
+  display: none;
+  position: absolute;
+  bottom: 15%;
+  right: 7%;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  width: 24px;
+}
+.form__input .showhide--active {
+  display: flex;
+}
+.form__input .showhide img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.form__input .showhide img.show {
+  display: block;
+}
+.form__input .showhide img.show.active {
+  display: none;
+}
+.form__input .showhide img.hide {
+  display: none;
+}
+.form__input .showhide img.hide.active {
+  display: block;
+}
+.form__input--double {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form--sign-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(800px) translate(-50%, -50%);
+  width: 70%;
+  max-width: 700px;
+  z-index: 10;
+  padding: 20px;
+  transition: all 0.6s ease;
+}
+.form--sign-up input {
+  width: 270px;
+  display: block;
+}
+.form--sign-up img {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 4px;
+}
+.form--sign-up .showhide {
+  right: 17%;
+}
+.form--sign-up button {
+  margin: 0 auto;
+  display: block;
+}
+.form--sign-up--active {
+  top: 50%;
+  left: 50%;
+  transform: translateY(0) translate(-50%, -50%);
+}
+.form--sign-up__checkbox {
+  text-align: left;
+  margin: 10px 0 60px 0;
+}
+.form--sign-up__checkbox input {
+  width: 20px;
+  display: inline;
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+.media__lists {
+  padding-left: 0;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.media__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  transition: all 0.4s ease;
+}
+.media__item img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.media__item img:hover {
+  transform: scale(1.4);
+}
+.media__item span {
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.media__item:hover {
+  background-color: #f5e5f5;
+}
+
+.btn {
+  padding: 12px 30px;
+  color: #fff;
+  background-color: #000;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  margin-top: 30px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn--sign-up {
+  margin-left: 40px;
+  background-color: #ca1515;
+}
+.btn--register, .btn--sign-in {
+  opacity: 0.3;
+  pointer-events: none;
+}
+.btn--register--active, .btn--sign-in--active {
+  pointer-events: all;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.or {
+  margin: 30px 0;
+  font-weight: 600;
+  font-size: 16px;
+  position: relative;
+}
+.or::before, .or::after {
+  content: "";
+  background-color: #ccc;
+  width: 80px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.or::before {
+  left: 20%;
+}
+.or::after {
+  right: 20%;
+}
+
+.icon {
+  background: #fff;
+  border: none;
+  outline: none;
+  position: absolute;
+}
+.icon img {
+  width: 20px;
+  height: auto;
+  transition: all 0.8s ease;
+  cursor: pointer;
+}
+.icon img:hover {
+  transform: rotate(360deg);
+}
+.icon--check, .icon--close {
+  position: absolute;
+  right: 20px;
+  bottom: 12px;
+  cursor: auto;
+  display: none;
+}
+.icon--check img:hover, .icon--close img:hover {
+  transform: rotate(0);
+}
+.icon--check--active, .icon--close--active {
+  display: block;
+}
+.icon.btn--close {
+  top: 30px;
+  right: 30px;
+}
+.icon.btn--return {
+  top: -20px;
+  left: 10px;
+}
+
+.error {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  display: none;
+  margin-top: 8px;
+  font-size: 15px;
+  color: #ca1515;
+}
+.error--exist--active, .error--invalid--active {
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s ease;
+}
+.overlay.hidden {
+  background-color: #000;
+  opacity: 0.5;
+  visibility: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  .form--sign-up {
+    width: 80%;
+  }
+  .media__lists {
+    justify-content: space-around;
+  }
+  .media__item span {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=registration.css.map */
